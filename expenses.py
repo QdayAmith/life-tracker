@@ -20,7 +20,6 @@ def add_expense():
 
     print("EXPENSE ADDED SUCCESSFULLY!")
 
-add_expense()
 
 
 def view_expenses():
@@ -39,7 +38,7 @@ def view_expenses():
 
     print("-" * 30)
 
-view_expenses()
+
 
 
 def total_expense():
@@ -52,8 +51,5 @@ def total_expense():
     total = sum(entry["amount"] for entry in collection_entries)
     print(f"Total Expense: {total}")    
 
-total_expense()
 
-print("-" * 30)
-print("-" * 30)
         
