@@ -1,5 +1,6 @@
 from expenses import add_expense, view_expenses, total_expense
 from habits import view_habits, add_habit, mark_habit_done
+from scraper import crypto_prices
 
 
 print(" WELCOME TO LIFE TRACKER!")
@@ -9,10 +10,11 @@ print("3. Total Expense")
 print("4. Add Habit")
 print("5. View Habit")
 print("6. Mark Habit Done")
-print("7. Exit")
+print("7. View Crypto Prices")
+print("8. Exit")
 
 while True:
-    choice = input("Choose an option (1-7): ").strip()
+    choice = input("Choose an option (1-8): ").strip()
 
     if choice == "1":
         add_expense()
@@ -27,7 +29,9 @@ while True:
     elif choice == "6":
         mark_habit_done()   
     elif choice == "7":
+        crypto_prices()
+    elif choice == "8":
         print("Goodbye!")
         break
     else:
-        print("Invalid choice. Please choose a valid option (1-7).")
+        print("Invalid choice. Please choose a valid option (1-8).")
