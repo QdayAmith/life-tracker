@@ -20,8 +20,6 @@ def add_expense():
 
     print("EXPENSE ADDED SUCCESSFULLY!")
 
-
-
 def view_expenses():
     try:
         with open("data/expenses.json", "r") as file:
@@ -38,9 +36,6 @@ def view_expenses():
 
     print("-" * 30)
 
-
-
-
 def total_expense():
     try:
         with(open("data/expenses.json", "r") as file):
@@ -50,6 +45,3 @@ def total_expense():
 
     total = sum(entry["amount"] for entry in collection_entries)
     print(f"Total Expense: {total}")    
-
-
-        
